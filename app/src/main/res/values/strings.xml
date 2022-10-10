@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">StarPlayz</string>
+    <string name="action_settings">Settings</string>
+    <string name="dummy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend pharetra ligula accumsan dignissim. Morbi aliquam dolor sed interdum aliquam. In eu malesuada mi, suscipit porta dolor. Sed at enim ut nulla mattis laoreet.</string>
+    <string name="title_label">Title</string>
+    <string name="image_desc">description of image goes here</string>
+    <string name="play_label">Play</string>
+    <string name="search_content">Search Content…</string>
+    <string name="language_dialog_title">Select Language</string>
+</resources>
