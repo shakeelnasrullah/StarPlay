@@ -11,6 +11,7 @@ object Constants {
 
     const val mediaKey = "media.to.play"
     const val languageExtras = "lang.selected"
+    const val VIDEO_URL = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
 
     // Filter the list according to media type
     private fun filterMediaTypes(mediaList: List<Media>): HashMap<String, ArrayList<Media>>{
