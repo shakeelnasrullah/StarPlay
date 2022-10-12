@@ -9,4 +9,7 @@ View Model
 Hilt
 Glide
 
+#Note
+To run this application, please replace your own api key in local.properties file in the main directory
+
 
