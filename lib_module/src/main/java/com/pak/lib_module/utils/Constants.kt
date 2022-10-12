@@ -5,10 +5,6 @@ import com.pak.lib_module.models.Media
 
 object Constants {
 
-    const val BASE_URL = "https://api.themoviedb.org/"
-    const val IMAGE_BASE_URL = "https://image.tmdb.org/t/p/original/"
-    const val API_KEY = "8c17be34f66a11d9e8a5ff8aec9ea18a"
-
     const val mediaKey = "media.to.play"
     const val languageExtras = "lang.selected"
     const val VIDEO_URL = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"

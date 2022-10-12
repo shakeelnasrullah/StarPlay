@@ -2,6 +2,7 @@ package com.pak.lib_module.respository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.pak.lib_module.BuildConfig
 import com.pak.lib_module.models.Media
 import com.pak.lib_module.models.SearchResponse
 import com.pak.lib_module.network.ApiService
@@ -24,7 +25,7 @@ class MediaRepositoryImpl @Inject constructor(private val apiService: ApiService
 
     override suspend fun searchMedia(queryString : String, language : String) {
         searchResponse_.postValue(Response.Loading())
-        val result = apiService.searchMedia(Constants.API_KEY , queryString, language)
+        val result = apiService.searchMedia(BuildConfig.API_KEY , queryString, language)
         if (result?.body() != null) {
             searchResponse_.postValue(Response.Success(result.body()?.results))
         } else
