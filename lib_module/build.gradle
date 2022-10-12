@@ -5,12 +5,22 @@ plugins {
     id 'dagger.hilt.android.plugin'
 }
 
+// Loading Properties from local.properties
+def apikeyPropertiesFile = rootProject.file("local.properties")
+def apikeyProperties = new Properties()
+apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
+
+
 android {
     compileSdk 33
 
     defaultConfig {
         minSdk 21
         targetSdk 33
+
+        buildConfigField("String", "BASE_URL", apikeyProperties['BASE_URL'])
+        buildConfigField("String", "IMAGE_BASE_URL", apikeyProperties['IMAGE_BASE_URL'])
+        buildConfigField("String", "API_KEY", apikeyProperties['API_KEY'])
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
